@@ -1,0 +1,9 @@
+$font-cursive: cursive
+$primary-color: #c5824b
+$secoundry-color: #51c54b    
+
+@function set-text-color($color)
+    @if lightness($color) > 50
+        @return #fff;
+    @else 
+        @return $primary-color
